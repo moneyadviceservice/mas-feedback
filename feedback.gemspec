@@ -13,7 +13,10 @@ Gem::Specification.new do |s|
   s.summary     = 'Feedback form'
   s.description = 'Feedback form'
 
-  s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile', 'README.md']
+  s.files      = Dir['{app,config,db,lib}/**/*'] + ['Rakefile', 'README.md']
+  s.test_files = Dir['spec/**/*']
 
   s.add_dependency 'rails', '~> 3.2.14'
+  s.add_development_dependency 'rspec-rails', '~> 2.14'
+  s.add_development_dependency 'factory_girl_rails', '~> 4.0'
 end
