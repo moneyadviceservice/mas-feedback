@@ -7,8 +7,8 @@ require "feedback/version"
 Gem::Specification.new do |s|
   s.name        = "feedback"
   s.version     = Feedback::VERSION
-  s.authors     = ["Pablo Vicente, Ruben Martin"]
   s.email       = ["PabloVicente.Carrera@moneyadviceservice.org.uk, RubenGarcia.Martin@moneyadviceservice.org.uk"]
+  s.authors     = ["Pablo Vicente", "Ruben Martin"]
   s.homepage    = "https://github.com/moneyadviceservice/feedback"
   s.summary     = "Feedback form"
   s.description = "Feedback form"
