@@ -1,0 +1,13 @@
+<%= javascript_include_tag 'zenbox' %>
+<script type="text/javascript">
+  if (typeof(Zenbox) !== "undefined") {
+    Zenbox.init({
+      dropboxID:   "<%= MAS::Feedback.config[I18n.locale].zendesk_id %>",
+      url:         "<%= MAS::Feedback.config[I18n.locale].zendesk_id %>",
+      tabColor:    "#008000",
+      tabTooltip:  "Feedback",
+      tabPosition: "Right",
+      hide_tab: "true"
+    });
+  }
+</script>
