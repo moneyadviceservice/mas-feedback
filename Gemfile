@@ -4,3 +4,4 @@ gemspec
 
 gem 'rspec-rails'
 gem 'cucumber-rails'
+gem 'capybara'

@@ -1,0 +1,1 @@
+MAS::Build.config[:config_path] = 'spec/dummy/config'

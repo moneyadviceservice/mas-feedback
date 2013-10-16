@@ -2,8 +2,8 @@
 <script type="text/javascript">
   if (typeof(Zenbox) !== "undefined") {
     Zenbox.init({
-      dropboxID:   "<%= config[I18n.locale].zendesk_id %>",
-      url:         "<%= config[I18n.locale].zendesk_url %>",
+      dropboxID:   "<%= config[I18n.locale][:id] %>",
+      url:         "<%= config[I18n.locale][:url] %>",
       tabColor:    "#008000",
       tabTooltip:  "Feedback",
       tabPosition: "Right",

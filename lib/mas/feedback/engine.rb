@@ -7,6 +7,8 @@ module MAS
           'zenbox.js'
         ]
       end
+
+      config.i18n.load_path += Dir[config.root.join(*%w{lib mas feedback locales *.{rb,yml}})]
     end
   end
 end

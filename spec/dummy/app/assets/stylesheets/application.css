@@ -1,0 +1,57 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ 
+ */
+
+h1.library-h1 {
+
+}
+
+h2.library-h2 {
+  background:#ddd;
+  padding:10px;
+}
+
+table.library-table {
+  margin-bottom:1em;
+}
+table.library-table th,
+table.library-table td {
+  border:1px solid #ddd;
+}
+
+.info,
+.code {
+  padding:4px;
+  vertical-align: top;
+}
+
+.module-demo {
+  width:420px;
+}
+
+.code {
+  font-family: monospace;
+  font-size:120%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+}
+.components-container {
+  width:460px;
+  margin:50px 0
+}
+
+.container-460 {
+  width:460px;
+}

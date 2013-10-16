@@ -1,0 +1,11 @@
+<% content_for(:container) do %>
+  <p id="embedded_login">
+    <a id="login" href="#">Login</a>
+    <%= link_to 'Logout', main_app.destroy_user_session_path, method: :delete, id: 'logout' %>
+  </p>
+  <h1><%= yield(:tool_heading) if content_for?(:tool_heading) %></h1>
+  <%= content_for?(:tool_content) ? yield(:tool_content) : yield %>
+<% end %>
+
+
+<%= render template: 'layouts/application' %>
