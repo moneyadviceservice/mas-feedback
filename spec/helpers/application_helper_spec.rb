@@ -21,12 +21,6 @@ module Zendesk
 
       describe '#feedback_tab' do
         subject(:output)  { helper.feedback_tab(config) }
-
-        before(:each) do
-          output.singleton_class.send(:define_method, :has_tag?) do |tag|
-            Capybara::RSpecMatchers::HaveSelector.new(tag)
-          end
-        end
         
         it 'should' do
           output.should have_tag(:li)
