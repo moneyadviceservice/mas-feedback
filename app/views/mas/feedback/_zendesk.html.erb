@@ -1,4 +1,9 @@
+<% content_for header do %>
+  <%= stylesheet_link_tag 'zenbox', media: :all %>
+<% end %>
+
 <%= javascript_include_tag 'zenbox' %>
+
 <script type="text/javascript">
   if (typeof(Zenbox) !== "undefined") {
     Zenbox.init({
@@ -7,7 +12,7 @@
       tabColor:    "#008000",
       tabTooltip:  "Feedback",
       tabPosition: "Right",
-      hide_tab: "true"
+      hide_tab:    "true"
     });
   }
 </script>
