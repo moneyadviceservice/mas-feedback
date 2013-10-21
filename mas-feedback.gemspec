@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
             Dir["lib/{decision_trees,flows,smart_answer}/**/*"] +
             Dir["lib/*.rb"] +
             Dir["lib/tasks/*.rake"] +
-            ["Rakefile", "README.rdoc"]
+            ["Rakefile"]
 
   s.add_dependency "rails", "~> 3.2.13"
 end
