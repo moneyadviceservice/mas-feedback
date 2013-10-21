@@ -22,7 +22,7 @@ module MAS
         let(:tab) { ZendeskTab.new(helper, config, :en)}
         subject   { tab.to_tag }
         it 'has a wrapper element' do
-          expect(subject).should have_tag('div#feedback-tab')
+          expect(subject).to have_tag('div#feedback-tab')
         end
         it 'embeds an image in the link' do
           expect(subject).to have_tag('a img')
