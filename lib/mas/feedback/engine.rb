@@ -3,6 +3,7 @@ module MAS
     class Engine < Rails::Engine
       initializer 'mas-feedback.setup_precompile_hooks', :group => :all do |app|
         app.config.assets.precompile += [
+          'mas/feedback/engine.css',
           'zenbox.css',
           'zenbox.js'
         ]
