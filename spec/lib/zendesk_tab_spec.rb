@@ -24,8 +24,8 @@ module MAS
         it 'has a wrapper element' do
           expect(subject).to have_tag('div#feedback-tab')
         end
-        it 'embeds an image in the link' do
-          expect(subject).to have_tag('a img')
+        it 'embeds a link' do
+          expect(subject).to have_tag('a')
         end
       end
 
