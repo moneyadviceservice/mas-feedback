@@ -1,6 +1,6 @@
-class MAS
-  class Feedback
-    class Version
+module MAS
+  module Feedback
+    module Version
       MAJOR = 1
       MINOR = 0
       PATCH = 1
