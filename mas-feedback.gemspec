@@ -11,11 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = "Gem for adding feedback forms to applications."
   s.description = ""
 
-  s.files = Dir["{app,config,db,vendor}/**/*"] +
-            Dir["lib/{decision_trees,flows,smart_answer}/**/*"] +
-            Dir["lib/*.rb"] +
-            Dir["lib/tasks/*.rake"] +
-            ["Rakefile"]
+  s.files = `git ls-files`.split("\n")
 
   s.add_dependency "rails", "~> 3.2.13"
 end
