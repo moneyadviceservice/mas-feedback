@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "mas-feedback"
-  s.version     = '0.0.1'
+  s.version     = MAS::Feedback::Version::STRING
   s.authors     = ["MAS"]
   s.email       = ["enquiries@moneyadviceservice.org.uk"]
   s.homepage    = "https://github.com/moneyadviceservice/feedback"
