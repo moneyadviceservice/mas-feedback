@@ -4,8 +4,8 @@ module MAS
       initializer 'mas-feedback.setup_precompile_hooks', :group => :all do |app|
         app.config.assets.precompile += [
           'mas/feedback/engine.css',
-          'zenbox.css',
-          'zenbox.js'
+          'mas/feedback/zenbox.css',
+          'mas/feedback/zenbox.js'
         ]
       end
 
