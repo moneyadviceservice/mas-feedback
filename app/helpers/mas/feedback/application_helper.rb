@@ -1,4 +1,5 @@
-module Zendesk
+# Rails expects module names in non-caps
+module Mas
   module Feedback
     module ApplicationHelper
       def zendesk_feedback_tab(config, header=:head)
