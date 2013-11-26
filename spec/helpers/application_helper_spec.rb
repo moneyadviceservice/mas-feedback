@@ -32,6 +32,18 @@ module Zendesk
             end
           end
         end
+
+        describe 'being called twice' do
+          let(:config) { double(:[] => { id: 1, url: 2 }) }
+
+          it 'should not initialize twice' do
+            output = helper.zendesk_feedback_tab(config) + helper.zendesk_feedback_tab(config)
+
+            expect(output).to_not match(/dropboxID\:\s*"1".*dropboxID\:\s*"1"/)
+            expect(output).to_not match(/url\:\s*"2".*url\:\s*"2"/)
+          end
+        end
+
       end
     end
   end
