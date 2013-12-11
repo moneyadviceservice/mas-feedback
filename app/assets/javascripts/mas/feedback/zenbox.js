@@ -70,7 +70,7 @@
     overlay.setAttribute('id', 'zenbox_overlay');
     overlay.style.display = 'none';
     overlay.innerHTML = '<div id="zenbox_container">' +
-                        '  <div class="zenbox_header"><img id="zenbox_close" /></div>' +
+                        '  <div class="zenbox_header"><button id="zenbox_close" tabindex="0">Close Feedback Form</button></div>' +
                         '  <iframe id="zenbox_body" frameborder="0" scrolling="auto" allowTransparency="true" title="Website Feedback"></iframe>' +
                         '</div>' +
                         '<div id="zenbox_scrim">&nbsp;</div>';
@@ -164,7 +164,7 @@
     if (!tab) { createElements(); }
     configure(options);
     updateTab();
-    closeButton.src = closeButtonURL();
+    closeButton.style.backgroundImage = 'url(' + closeButtonURL() + ')';
     iframe.src = loadingURL();
 
     window.addEventListener('message', function(e) {
