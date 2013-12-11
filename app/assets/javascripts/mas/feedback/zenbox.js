@@ -71,7 +71,7 @@
     overlay.style.display = 'none';
     overlay.innerHTML = '<div id="zenbox_container">' +
                         '  <div class="zenbox_header"><img id="zenbox_close" /></div>' +
-                        '  <iframe id="zenbox_body" frameborder="0" scrolling="auto" allowTransparency="true"></iframe>' +
+                        '  <iframe id="zenbox_body" frameborder="0" scrolling="auto" allowTransparency="true" title="Website Feedback"></iframe>' +
                         '</div>' +
                         '<div id="zenbox_scrim">&nbsp;</div>';
     document.body.appendChild(overlay);
@@ -248,6 +248,8 @@
     if (window.zenbox_params) {
       Zenbox.init(window.zenbox_params);
     }
+
+    console.log(Zenbox);
   });
 
   window.Zenbox = Zenbox;
