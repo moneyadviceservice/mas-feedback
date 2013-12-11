@@ -248,8 +248,6 @@
     if (window.zenbox_params) {
       Zenbox.init(window.zenbox_params);
     }
-
-    console.log(Zenbox);
   });
 
   window.Zenbox = Zenbox;
