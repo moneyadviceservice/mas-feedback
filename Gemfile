@@ -1,13 +1,12 @@
-source 'http://gems.test.mas'
+source 'http://gems.test.mas' if ENV['MAS_BUILD']
 source 'https://rubygems.org'
 
 gemspec
 
-group :development, :test do
-  gem 'capybara'
-  gem 'coveralls', require: false
-  gem 'cucumber-rails', require: false
-  gem 'mas-build'
-  gem 'rspec-rails'
-end
+gem 'capybara'
+gem 'coveralls', require: false
+gem 'cucumber-rails', require: false
+gem 'rspec-rails'
 
+
+gem 'mas-build' if ENV['MAS_BUILD']
