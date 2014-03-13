@@ -5,6 +5,16 @@ MAS-Feedback
 
 Gem for implementing feedback forms within MAS properties.
 
+Install
+-------
+
+Add the following gem to your `Gemfile` or `gemspec`
+
+```ruby
+gem 'mas-feedback'
+```
+
+Remember to bundle install!
 
 Usage
 -----
@@ -25,3 +35,6 @@ settings = {
 
 zendesk_feedback_tab(settings)
 ```
+
+[Zendesk DropBoxes](https://support.zendesk.com/entries/20990726-Setting-up-your-Feedback-Tab-channel) are a means to filter and render different feedback tabs to the user.
+
