@@ -26,10 +26,12 @@ settings = {
   en: {
     id: <english zendesk dropbox id>
     url: 'http://<zendesk url>'
+    name: Feedback (text visible to user)
   },
   cy: {
     id: <welsh zendesk dropbox id>
     url: 'http://<zendesk url>'
+    name: Welsh equivalent
   }
 }
 
