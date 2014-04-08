@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
 
   s.add_dependency "rails", ">= 3.2.13"
+  s.add_dependency "sass-rails"
 end
 
 
