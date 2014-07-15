@@ -4,6 +4,7 @@
   <%= javascript_include_tag 'mas/feedback/zenbox' %>
 <% end %>
 
+<% content_for :javascripts do %>
 <script type="text/javascript">
   if (typeof(Zenbox) !== "undefined") {
     Zenbox.init({
@@ -16,3 +17,4 @@
     });
   }
 </script>
+<% end %>
