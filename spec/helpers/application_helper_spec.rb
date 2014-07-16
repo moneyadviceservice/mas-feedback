@@ -2,10 +2,7 @@ require 'spec_helper'
 
 module Zendesk
   module Feedback
-
-    describe ApplicationHelper do
-
-
+    describe ApplicationHelper, type: :helper do
       describe '#zenbox_feedback_tab' do
         subject(:output)  { helper.zendesk_feedback_tab(config) }
 
